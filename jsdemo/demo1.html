@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>Page title</title>
+   </head>
+   <body>
+    <h2>A demo to show three of outputs in Javascript</h2>
+    <ol>
+        <li>console.log()</li>
+        <li>alert()</li>
+        <li>document.ElementById().innerHtml</li>
+    </ol>
+    <p id="para1"></p>
+    <p id="para2"></p>
+    <script>
+        console.log("this output is displayed on the console");
+        alert("this output is alerted using alert()");
+document.getElementById("para1").innerHTML= "<b>this output is displayed using document.getElementById('para1').innerHtml</b>";
+document.getElementById("para2").innerText= "<b>this output is displayed using document.getElementById('para2').innerText</b>";
+    </script>
+   </body>
+</html>

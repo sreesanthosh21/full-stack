@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  <title>page layout</title>
+  <style>
+    @keyframes move-div{
+        0%{
+            transform: rotateZ(0deg);
+        }
+        25%{
+            transform: rotateZ(20deg);
+        }
+        50%{
+            transform: translate(200px,0);
+        }
+        75%{
+            transform: rotate(180deg);
+        }
+        100%{
+            transform: rotate(180deg);
+        }
+    }
+div{
+    height: 30px;
+    width: 40px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 5px;
+    animation-name: move-div ;
+    animation-duration: 5s;
+}
+  </style>
+</head>
+<body>
+ <div>CSS</div>
+</body>
+</html>

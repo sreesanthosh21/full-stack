@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page title</title>
+        <script>
+            function toggleDarkMode(){
+                let checkValue = document.getElementById("dark").checked;
+                //alert("Value"+checkValue); 
+                if(checkValue){
+                    //alert("enable dark mode");
+                    document.body.style.backgroundColor="black";
+                    document.body.style.color="white";
+                }
+                else{
+                    document.body.style.backgroundColor="white";
+                    document.body.style.color="black";
+                   // alert("Disable dark mode");
+                }
+            }          
+        </script>
+
+    </head>
+    <body>
+        <input type="checkbox" id="dark" value="yesDark" onchange="toggleDarkMode()">Dark mode
+
+        <h2>Demo to work dark mode</h2>
+       <div>
+        vannakam
+       </div>
+       <div>
+        vannakam di mapla
+       </div>
+       <div>
+        vannakam di mapla chennai la iruthu
+       </div>
+    </body>
+</html>

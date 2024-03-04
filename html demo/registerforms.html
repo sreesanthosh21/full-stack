@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration form</title>
+    </head>
+    <body>
+        <h2>Registration form</h2>
+        <form action="directing url" method="post">
+        <table>
+            <tr>
+                <td><label for="first name">First Name</label></td>
+                <td>:</td>
+                <td><input 
+                    type="text"
+                    placeholder="Enter your first name "
+                    id="firstname"
+                    name="fname/">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="lastname">last Name</label></td>
+                <td>:</td>
+                <td><input 
+                    type="text"
+                    placeholder="Enter your last name "
+                    id="lastname"
+                    name="lname/">
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male"/>
+                    <label for="male">Male</label> 
+                    <input type="radio" id="female" name="gender" value="female"/>
+                    <label for="female/">female</label> 
+                    <input type="radio" id="other" name="gender" value="other"/>
+                    <label for="other">other</label> 
+                </td>
+            </tr>
+            <tr>
+                <td><label for="dob">DOB</label></td>
+                <td>:</td>
+                <td><input type="date" id="dob" name="DOB"</td>
+            </tr>
+            <tr>
+                <td>Qualification</td>
+                <td>:</td>
+                <td>
+                    <input list="qual" name="Qualification">
+                    <datalist id="qual" >
+                        <option value="10th pass"></option>
+                        <option value="12th pass"></option>
+                        <option value="UG"></option>
+                        <option value="PG"></option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile</label></td>
+                <td>:</td>
+                <td><input type="number" id="mobile" name="Mobile"</td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="em">Email</label>
+                </td>
+                <td>:</td>
+                <td><input
+                type="email"
+                placeholder="Enter your Email "
+                id="em"
+                name="lemail"/>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="position">Position</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" id="position" name="Position"
+                value="Software Engineer"
+                 readonly>               </td>
+            </tr>
+            <tr>
+                <td>Hobbies</td>
+                <td>:</td>
+                <td>
+                    <input type="checkbox"
+                    id="draw"
+                    name="drawing"
+                    value="Drawing"/>
+                    <label for="draw">Drawing</label>
+                    <input type="checkbox"
+                    id="hobby1"
+                    name="hobby2"
+                    value="Gardening"/>
+                    <label for="garden">Gardening</label>
+                    <input type="checkbox"
+                    id="dance"
+                    name="hobby3"
+                    value="Danceing"/>
+                    <label for="dance">Danceing</label>
+                    <input type="checkbox"
+                    id="other"
+                    name="hobby4"
+                    value="others"/>
+                    <label for="other">others</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td>:</td>
+                <td><textarea name="add"
+                id="address"
+                placeholder="enter your address"\
+                rows="3"
+                cols="30"/>
+                </textarea>
+            </td>
+            </tr>
+            <tr>
+                <td><label for="" >Country</label></td>
+            <td>:</td>
+            <td>
+                <select name="nation" id="Country ">
+                    <option>Select your country</option>
+                    <option value="India">India</option>
+                    <option value="China">China</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="sri Lanka">Sri Lanka</option>
+                    <option value="Japan">Japan</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td><label for="cv">Resume</label></td>
+                <td>:</td>
+                <td><input type="file" id="cv" name="Resume"/></td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Register</button>
+                    <td></td>
+                    <td><button type="reset">clear</button>
+                    </td>
+                </td>
+            </tr>
+        </table>     
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <title>page layout</title>
+  <style>
+    body{
+      background-color: beige;
+      height: 100vh;
+      display: grid;
+      grid-template-areas: 
+      'head head head'
+      'navigation content side'
+      'navigation foot foot';
+    }
+    header{
+      grid-area: head;
+    },
+    nav
+    {
+      grid-area: navigation;
+    },
+    main{
+      grid-area: content;
+    },
+    aside{
+      grid-area: side;
+    },
+    footer{
+      grid-area: foot;
+      background-color: blue;
+            color: white;
+            border: skyblue 1px solid;
+    }
+  </style>
+</head>
+<body>
+  <header>header</header>
+  <nav>nav</nav>
+  <main>main</main>
+  <aside>side content </aside>
+  <footer>footer</footer>
+</body>
+</html>

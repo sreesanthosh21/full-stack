@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page title</title>
+
+    </head>
+    <body>
+        <h2>Demo to work with var, let,const</h2>
+        <script>
+            var x=20
+            {
+                var y=60
+                x=30
+            }
+            x=40
+            y=80
+            console.log(x)
+            console.log(y)
+            console.log("--------")
+            let x1=20
+            {
+                let y1=60
+                x1=30
+            }
+            console.log(x1)
+           // console.log(y1) // it cannot access inside block variable because of let 
+            console.log("--------")
+            const x2=20
+            {
+                const y2=60
+                //x2=30// gives error because of you can't allowed to change value
+            }
+           
+            console.log(x2)
+           // console.log(y2) same as let
+
+        </script>
+    </body>
+</html>
