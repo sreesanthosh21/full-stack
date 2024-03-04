@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page title</title>
+<script>
+   function changeForeground(){
+        let value=document.getElementById("fcolor").value;
+       // alert(forecolorvalue)
+       document.body.style.color=foreColorValue;
+   }
+   function changeBackground(){
+    let value=document.getElementById("bcolor").value;
+       // alert(backcolorvalue)
+       document.body.style.backgroundColor=BackColorvalue;
+   }
+</script>
+    </head>
+    <body>
+        <h2>Demo to change backgrpund and foreground colour </h2>
+    <div >
+        <label for="">Fore-ground</label>
+        <select id="fcolor" onchange="changeForeground()">
+            <option>select foreground color</option>
+            <option style="background-color: brown;" value="brown"></option>
+            <option style="background-color: blue;" value="blue"></option>
+            <option style="background-color: black;" value="black"></option>
+            <option style="background-color: darkgreen;" value="darkgreen"></option>
+            <option style="background-color: darkmagenta;" value="darkmagenta"></option>
+            <option style="background-color: orange;" value="orange"></option>
+        </select>
+        <label for="">back-ground</label>
+        <select id="bcolor" onchange="changeBackground()">
+            <option>select background color</option>
+            <option style="background-color: brown;" value="brown"></option>
+            <option style="background-color: blue;" value="blue"></option>
+            <option style="background-color: black;" value="black"></option>
+            <option style="background-color: darkgreen;" value="darkgreen"></option>
+            <option style="background-color: darkmagenta;" value="darkmagenta"></option>
+            <option style="background-color: orange;" value="orange"></option>
+            <option style="background-color: white;" value="white"></option>
+        </select>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page title</title>
+<script>
+ function findSquare(){
+    let numVal= document.getElementById("num").value;
+    //alert(numVal);
+    let ans=numVal*numVal;
+    document.getElementById("head4").innerHTML="the square of the number "+ numVal + " is "+ans;
+ }    
+ function erase(){
+    document.getElementById("num").value="";
+    document.getElementById("head4").innerHTML="";
+ }
+</script>
+    </head>
+    <body>
+        <h2>Demo to work with square functions</h2>
+        <div>
+        <label for="num">ENter a number:</label>
+        <input type="text" id="num">
+        </div>
+        <div>
+            <button type="button" onclick="findSquare()">FInd the square</button>
+            <button type="button" onclick="erase()">clear</button>
+
+        </div>
+        <div>
+            <h4 id="head4"></h4>
+        </div>
+
+    </body>
+</html>
